@@ -33,9 +33,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <h2>Installation Steps</h2>
 
 
-1.) The first thing you'll do is create a virtual machine (VM) by going to https://portal.azure.com/. Setup your virtual machine with Windows 10 Pro, version 22H2. You'll want to choose a virtual machine with atleast 2 vcpus and 16 gbs of memory.
+The first thing you'll do is create a virtual machine (VM) by going to https://portal.azure.com/. Setup your virtual machine with Windows 10 Pro, version 22H2. You'll want to choose a virtual machine with atleast 2 vcpus and 16 gbs of memory.
 
-2.) Once your VM is fully deployed you'll want to conncet to it with the public ip address the VM is setup with. You'll connect through the remote desktop connection app. (For Mac users you'll use >?<
+Once your VM is fully deployed you'll want to conncet to it with the public ip address the VM is setup with. You'll connect through the remote desktop connection app. (For Mac users you'll use >?<
 </p>
 <br />
 
@@ -48,7 +48,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 </p>
 <p>
   
-3.) Once you've connected to your VM you'll go to: control panel -> programs -> Turn Windows features on and off.
+Once you've connected to your VM you'll go to: control panel -> programs -> Turn Windows features on and off.
 
 <p>
 <img src="https://imgur.com/fGXMpx4.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
@@ -60,7 +60,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 </p>
 <p>
   
-4.) You'll want to install / enable IIS in Windows with CGI and Common HTTP Features.
+You'll want to install / enable IIS in Windows with CGI and Common HTTP Features.
    World Wide Web Services -> Application Development Features -> 
 [X] CGI
 [X] Common HTTP Features
@@ -88,14 +88,14 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   
   
   
-5.) Now that IIS is enabled, download and install PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi) from the Installation Files.
+Now that IIS is enabled, download and install PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi) from the Installation Files.
   Go through the install wizard and complete the install.
   
-6.) Next from the Installation Files, download and install the Rewrite Module (rewrite_amd64_en-US.msi)
+Next from the Installation Files, download and install the Rewrite Module (rewrite_amd64_en-US.msi)
   
-7.) Create a folder in the C drive named PHP.
+Create a folder in the C drive named PHP.
   
-8.) From the Installation Files, download PHP 7.3.8 (php-7.3.88-nts-Win32-VC15-x866.zip) and unzip the contents into C:\PHP
+From the Installation Files, download PHP 7.3.8 (php-7.3.88-nts-Win32-VC15-x866.zip) and unzip the contents into C:\PHP
   
   !! ATTENTION !!
 If this appears, choose to “Keep” the file:
@@ -131,7 +131,7 @@ Standard Configuration ->
 </p>
 <p>
   
-11.) Next you'll search for IIS in the windows search bar. Right click and Open IIS as an administrator.
+Next you'll search for IIS in the windows search bar. Right click and Open IIS as an administrator.
   The program should look like this.
   
 <p>
@@ -139,7 +139,7 @@ Standard Configuration ->
 </p>
 <p>
   
-12.) Now we'll register PHP from within IIS.
+Now we'll register PHP from within IIS.
   Click on PHP Manager ->
   
 <p>
@@ -169,28 +169,28 @@ Then you'll provide a pathway to the php executable file (php-cgi.exe).
 </p>
 <p>
   
-13.) Next you'll install osTicket v1.15.8. First download osTicket from the Installation Files Folder. Once thats complete, open the folder to find a folder labeled "upload". Copy 'upload' to c:\inetpub\wwwroot. Within wwwroot folder, rename "upload" to "osTicket"
+Next you'll install osTicket v1.15.8. First download osTicket from the Installation Files Folder. Once thats complete, open the folder to find a folder labeled "upload". Copy 'upload' to c:\inetpub\wwwroot. Within wwwroot folder, rename "upload" to "osTicket"
   
   Restart IIS again.
   
-14.) On IIS go to sites -> Default -> osTicket and on the right, select “Browse *:80”
+On IIS go to sites -> Default -> osTicket and on the right, select “Browse *:80”
   
 <p>
 <img src="https://imgur.com/Yw55d5b.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 
-  If you see this screen, that mean osTiscket is working! Great job, you've eraned a deep breath! Now, lets continue.
-  
-  Some extensions wil not be enabled on the osTicket browser. Next you'll manually enable a few extensions in IIS for them to work.
   
 <p>
 <img src="https://imgur.com/eJIsGTn.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+
+If you see this screen, that mean osTiscket is working! Great job, you've eraned a deep breath! Now, lets continue.
   
+  Some extensions wil not be enabled on the osTicket browser. Next you'll manually enable a few extensions in IIS for them to work. 
   To enable the extensions:
-  -Go back to IIS, sites -> Default -> osTicket
+  Go back to IIS, sites -> Default -> osTicket
   -Double click PHP manager
   -Select "Enable or disable an extension"
   

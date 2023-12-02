@@ -225,7 +225,7 @@ Now, you're are going to rename one of the files in your osTicket folder.
   
   You're going to rename ost-sampleconfig.php to ost-config.php
 
-  OST-SAMPLECONFIG FILE LOCATION IMAGE
+  ![image](https://github.com/oraljr/osticket-prereqs/assets/152557529/ffa05972-aff7-4cd6-a5ab-fe210b1c10fd)
   
   Next you'll right click on the file and go to properties -> security -> advanced, and disable the inheritance. Then select Remove all inherited permissions from this object.
   

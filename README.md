@@ -36,6 +36,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 The first thing you'll do is create a virtual machine (VM) by going to https://portal.azure.com/. Setup your virtual machine with Windows 10 Pro, version 22H2. You'll want to choose a virtual machine with atleast 2 vcpus and 16 gbs of memory.
 
 Once your VM is fully deployed you'll want to conncet to it with the public ip address the VM is setup with. You'll connect through the remote desktop connection app. (For Mac users you can install Microsoft remote desktop from the app store)
+
+![image](https://github.com/oraljr/osticket-prereqs/assets/152557529/ce86b57f-3ea1-4c07-9bcb-9c5e019663be)
+
 </p>
 <br />
 
@@ -227,7 +230,7 @@ Now, you're are going to rename one of the files in your osTicket folder.
 
   ![image](https://github.com/oraljr/osticket-prereqs/assets/152557529/ffa05972-aff7-4cd6-a5ab-fe210b1c10fd)
   
-  Next you'll right click on the file and go to properties -> security -> advanced, and disable the inheritance. Then select Remove all inherited permissions from this object.
+  Next you'll right click on the ost-config.php file and go to properties -> security -> advanced, and disable the inheritance. Then select Remove all inherited permissions from this object.
   
   Next you'll add new permissions.
   
@@ -266,8 +269,7 @@ Select a principal
 <img src="https://imgur.com/saRO3y5.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Next you'll continue to setup osTicket within the browser. Click Continue on the osTicket browser page.
-  Fill out the page as required (you'll save the Database Settings for later). 
+  Next you'll continue to setup osTicket within the browser. Click Continue on the osTicket browser page. Name your Help Desk, add an emial to recieve eamil from customers and fill in the remaining as required (you'll save the Database Settings for later). 
   
   Next you'll download and install HeidiSQL from the Installation Files. 
   
@@ -283,18 +285,18 @@ Select a principal
 </p>
 <p>
   
-  Make sure the username is root and the password is Password1.
+  Make sure the username is root and enter the password you chose when you set up the server.
   
 <p>
 <img src="https://imgur.com/LEAZNOc.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   
-  Once you're connected to the session you will finish setting everything up back on the. Under Database Settings, the browser the username will be 'root' and the password will be Password1.
+  Once you're connected to the session you will finish setting up back on the browser. Under Database Settings, the browser the username will be 'root' and the password will be Password1.
   
   Next you'll create a new database for osTicket in HeidiSQL. Right click on the left side where is says "Unnamed", select "create new", then select "database". Name the new database 'osTicket'. Once you have the new database setup go back to the osTicket browser and under MySQL Database fill in 'osTicket'.
 
-NEW DATABASE IMAGE
+![image](https://github.com/oraljr/osticket-prereqs/assets/152557529/9afcd4bb-99bd-492b-9372-4d3a54740a58)
   
 <p>
 <img src="https://imgur.com/0rG1AJm.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>

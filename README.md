@@ -35,7 +35,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 The first thing you'll do is create a virtual machine (VM) by going to https://portal.azure.com/. Setup your virtual machine with Windows 10 Pro, version 22H2. You'll want to choose a virtual machine with atleast 2 vcpus and 16 gbs of memory.
 
-Once your VM is fully deployed you'll want to conncet to it with the public ip address the VM is setup with. You'll connect through the remote desktop connection app. (For Mac users you'll use >?<
+Once your VM is fully deployed you'll want to conncet to it with the public ip address the VM is setup with. You'll connect through the remote desktop connection app. (For Mac users you can install Microsoft remote desktop from the app store)
 </p>
 <br />
 
@@ -48,7 +48,7 @@ Once your VM is fully deployed you'll want to conncet to it with the public ip a
 </p>
 <p>
   
-Once you've connected to your VM you'll go to: control panel -> programs -> Turn Windows features on and off.
+Once you've logged in with the username and password you created for your VM in Azure and connected to your VM, you'll go to: control panel -> programs -> Turn Windows features on and off.
 
 <p>
 <img src="https://imgur.com/fGXMpx4.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
@@ -97,8 +97,7 @@ Create a folder in the C drive named PHP.
   
 From the Installation Files, download PHP 7.3.8 (php-7.3.88-nts-Win32-VC15-x866.zip) and unzip the contents into C:\PHP
   
-  !! ATTENTION !!
-If this appears, choose to “Keep” the file:
+(_**NOTE**_ If this appears, choose to “Keep” the file:)
   
 <p>
 <img src="https://imgur.com/xZv1Yhw.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>

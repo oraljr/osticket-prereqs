@@ -116,7 +116,7 @@ Typical Setup ->
 Launch Configuration Wizard (after install) ->
 Standard Configuration ->
 
-  Make the new root password: Password1
+  Choose a new root password
   
 <p>
 <img src="https://imgur.com/KxcUy7C.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
@@ -203,7 +203,7 @@ If you see this screen, that mean osTiscket is working! Great job, you've eraned
 </p>
 <p>
   
-  You'll want to enable the three following extensions:
+  You'll want to right click to enable the three following extensions:
   
   1.) php_imap.dll
  
@@ -216,8 +216,8 @@ If you see this screen, that mean osTiscket is working! Great job, you've eraned
 </p>
 <p>
 
-  RIGHT CLICK ENABLE SG
-  
+![image](https://github.com/oraljr/osticket-prereqs/assets/152557529/d8003608-9845-4a2e-a243-b3a1d4c68bd8)
+
 Refresh the osTicket site in your browser, observe the changes of the extensions you enabled.
   
 Now, you're are going to rename one of the files in your osTicket folder.

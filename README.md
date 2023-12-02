@@ -33,7 +33,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <h2>Installation Steps</h2>
 
 
-The first thing you'll do is create a virtual machine (VM) by going to https://portal.azure.com/. Setup your virtual machine with Windows 10 Pro, version 22H2. You'll want to choose a virtual machine with atleast 2 vcpus and 16 gbs of memory.
+The first thing you'll do is create a virtual machine (VM) by going to https://portal.azure.com/. Setup your virtual machine with Windows 10 Pro, version 22H2. You'll want to choose a virtual machine with atleast 2 vcpus and 16 gbs of memory. If your VM is lagging, you can delete your VM and make a new one with 4 vcpus.
 
 Once your VM is fully deployed you'll want to conncet to it with the public ip address the VM is setup with. You'll connect through the remote desktop connection app. (For Mac users you can install Microsoft remote desktop from the app store)
 

@@ -80,7 +80,7 @@ You'll want to install / enable IIS in Windows with CGI and Common HTTP Features
   
 ***NOTE*** Make sure all Common HTTP Features are checked.
  
- To test if IIS is installed properly, open browser of your choice and search 127.0.0.1 in your address bar. 
+ To test if IIS is installed properly, open browser of your choice and search 127.0.0.1 (loopback address) in your address bar. 
   It should look something like this. 
   
 <p>

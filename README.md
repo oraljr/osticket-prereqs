@@ -189,6 +189,8 @@ On IIS go to sites -> Default -> osTicket and on the right, select “Browse *:8
 <p>
 
 If you see this screen, that mean osTiscket is working! Great job, you've eraned a deep breath! Now, lets continue.
+
+<hr>
   
   Some extensions wil not be enabled on the osTicket browser. Next you'll manually enable a few extensions in IIS for them to work. 
   To enable the extensions:
@@ -292,7 +294,7 @@ Select a principal
 </p>
 <p>
   
-  Once you're connected to the session you will finish setting up back on the browser. Under Database Settings, the browser the username will be 'root' and the password will be Password1.
+  Once you're connected to the session you will finish setting up back on the browser. Under 'Database Settings' the username will be 'root' and the password will be Password1.
   
   Next you'll create a new database for osTicket in HeidiSQL. Right click on the left side where is says "Unnamed", select "create new", then select "database". Name the new database 'osTicket'. Once you have the new database setup go back to the osTicket browser and under MySQL Database fill in 'osTicket'.
 
@@ -305,7 +307,9 @@ Select a principal
   
   The penultimate step is some cleaning up. You be deleting the '**setup**' folder from your system. Got to the C drive -> inetpub -> wwwroot -> osTicket -> select setup and delete setup folder _**only**_.
   
-  Next you'll set the permissions back to "Read" only for the ost-config.php file. C drive -> C drive -> inetpub -> wwwroot -> osTicket -> include -> right click ost-config.php and rest permissions to Read & execute and Read.
+  Next you'll set the permissions back to "Read" only for the ost-config.php file. 
+  
+  C drive -> C drive -> inetpub -> wwwroot -> osTicket -> include -> right click ost-config.php and rest permissions to Read & execute and Read.
   
 <p>
 <img src="https://imgur.com/wFr0pkK.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
